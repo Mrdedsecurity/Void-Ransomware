@@ -24,7 +24,10 @@ Instructions:
 Clone Repository:
 * git clone https://github.com/Mrdedsecurity/Void-Ransomware
 
-Navigate to the Directory:
+Navigate to the project:
+* cd Void-Ransomware
+
+Navigate to the victim folder demo:
 * cd victimfolder
 
 Run Ransomware Script:
