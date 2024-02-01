@@ -11,7 +11,7 @@ Description:
 
 This repository contains a simulated basic ransomware script for educational purposes only. The script is designed to demonstrate the potential risks associated with cybersecurity threats, such as ransomware attacks. It should not be used for any malicious intent, and its usage is strictly limited to educational and awareness purposes.
 
-・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・・┈┈・┈┈・
+・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・
 
 
 Features:
@@ -23,7 +23,7 @@ Features:
 * Decryption script availabe with secret password being "dedopswashere"
 
 
-・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・・┈┈・┈┈・
+・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・
 
 
 Instructions:
@@ -48,7 +48,7 @@ Secret Phase
 
 
 
-・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・
+・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・
 
 Disclaimer:
 
