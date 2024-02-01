@@ -20,7 +20,7 @@ Features:
 
 * Encryption of files using the Fernet symmetric key encryption algorithm.
 * Key generation and storage for demonstration purposes.
-* Encryts entire folder which the ransomware is contained within.
+* Encryts folder which the ransomware is contained within.
 * Work with multiple file types.
 * Decryption script availabe with secret password being "dedopswashere"
 
