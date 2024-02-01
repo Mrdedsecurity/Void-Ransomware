@@ -22,22 +22,22 @@ Features:
 Instructions:
 
 Clone Repository:
-* git clone https://github.com/Mrdedsecurity/Void-Ransomware
+*      git clone https://github.com/Mrdedsecurity/Void-Ransomware
 
 Navigate to the project:
-* cd Void-Ransomware
+*      cd Void-Ransomware
 
 Navigate to the victim folder demo:
-* cd victimfolder
+*      cd victimfolder
 
 Run Ransomware Script:
-* python3 voidransom.py
+*      python3 voidransom.py
 
 Decrypt Files
-* python3 voiddecrypt.py
+*      python3 voiddecrypt.py
 
 Secret Phase
-* dedopswashere
+*      dedopswashere
 
 Disclaimer:
 
