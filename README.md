@@ -1,5 +1,9 @@
-Void Rasomware
-
+____   ____    .__    .___ __________                                                                
+\   \ /   /___ |__| __| _/ \______   \_____    ____   ____________  _  _______ _____ _______   ____  
+ \   Y   /  _ \|  |/ __ |   |       _/\__  \  /    \ /  ___/  _ \ \/ \/ /     \\__  \\_  __ \_/ __ \ 
+  \     (  <_> )  / /_/ |   |    |   \ / __ \|   |  \\___ (  <_> )     /  Y Y  \/ __ \|  | \/\  ___/ 
+   \___/ \____/|__\____ |   |____|_  /(____  /___|  /____  >____/ \/\_/|__|_|  (____  /__|    \___  >
+                       \/          \/      \/     \/     \/                  \/     \/            \/ 
 Description:
 
 This repository contains a simulated basic ransomware script for educational purposes only. The script is designed to demonstrate the potential risks associated with cybersecurity threats, such as ransomware attacks. It should not be used for any malicious intent, and its usage is strictly limited to educational and awareness purposes.
