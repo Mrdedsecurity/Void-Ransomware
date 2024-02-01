@@ -26,6 +26,9 @@ Run Ransomware Script:
 Decrypt Files
 * python3 voiddecrypt.py
 
+Secret Phase
+* dedopswashere
+
 Disclaimer:
 
 This script is intended solely for educational use and ethical hacking practice. The author does not endorse or encourage any form of illegal or harmful activity. Any misuse of this script for malicious purposes is strongly condemned. Always respect privacy and adhere to legal and ethical standards.
