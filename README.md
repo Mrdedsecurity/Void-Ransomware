@@ -6,14 +6,17 @@ This repository contains a simulated basic ransomware script for educational pur
 
 Features:
 
-Encryption of files using the Fernet symmetric key encryption algorithm.
-Key generation and storage for demonstration purposes.
-Encryts entire folder which the ransomware is contained within.
-Work with multiple file types.
-Decryption script availabe with secret password being "dedopswashere"
+* Encryption of files using the Fernet symmetric key encryption algorithm.
+* Key generation and storage for demonstration purposes.
+* Encryts entire folder which the ransomware is contained within.
+* Work with multiple file types.
+* Decryption script availabe with secret password being "dedopswashere"
 
 
 Disclaimer:
 
 This script is intended solely for educational use and ethical hacking practice. The author does not endorse or encourage any form of illegal or harmful activity. Any misuse of this script for malicious purposes is strongly condemned. Always respect privacy and adhere to legal and ethical standards.
 
+Instructions:
+
+git clone https://github.com/your-username/ransomware-simulation.git
