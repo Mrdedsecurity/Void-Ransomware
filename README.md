@@ -1,4 +1,4 @@
-#Void Rasomware
+Void Rasomware
 
 Description:
 
