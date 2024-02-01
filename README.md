@@ -11,6 +11,9 @@ Description:
 
 This repository contains a simulated basic ransomware script for educational purposes only. The script is designed to demonstrate the potential risks associated with cybersecurity threats, such as ransomware attacks. It should not be used for any malicious intent, and its usage is strictly limited to educational and awareness purposes.
 
+・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・・┈┈・┈┈・
+
+
 Features:
 
 * Encryption of files using the Fernet symmetric key encryption algorithm.
@@ -18,6 +21,10 @@ Features:
 * Encryts entire folder which the ransomware is contained within.
 * Work with multiple file types.
 * Decryption script availabe with secret password being "dedopswashere"
+
+
+・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・・┈┈・┈┈・
+
 
 Instructions:
 
@@ -38,6 +45,10 @@ Decrypt Files
 
 Secret Phase
 *      dedopswashere
+
+
+
+・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・
 
 Disclaimer:
 
