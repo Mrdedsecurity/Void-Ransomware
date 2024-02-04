@@ -43,8 +43,8 @@ Navigate to the project:
 Data exfilatration configuration
 *     configure script's SSH connection for "C2" 
 
-Navigate to the victim folder:
-*      cd victimfolder
+Navigate to a victim folder:
+*      cd victimfolder (if encrypting demo files)
 
 Run Ransomware Script:
 *      python3 voidransom.py
