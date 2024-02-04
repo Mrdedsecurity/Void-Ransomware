@@ -32,7 +32,8 @@ Features:
 
 
 ・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・
-
+  ![Void](https://github.com/Mrdedsecurity/Void-Ransomware/blob/main/image/server.jpg)
+・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・
 
 Instructions:
 
