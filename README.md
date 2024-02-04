@@ -50,7 +50,7 @@ Run Ransomware Script:
 *      python3 voidransom.py
 
 Data exfiltation:
-* check data was successfully to location, alongside key.
+* check data was successfully moved to location, alongside key.
 
 Decrypt Files with key provided
 *      python3 voiddecrypt.py
