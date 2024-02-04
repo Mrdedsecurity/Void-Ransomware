@@ -20,9 +20,12 @@ Features:
 
 * Encryption of files using the Fernet symmetric key encryption algorithm.
 * Key generation and storage for demonstration purposes.
-* Encryts folder which the ransomware is contained within.
+* Encrypt folder which the ransomware is contained within.
 * Work with multiple file types.
-* Decryption script availabe with secret password being "dedopswashere"
+* Decryption script available with secret password being "dedopswashere"
+* Exfiltration of victim data and encryption key via SSH (SCP), sent to a "Command and Control (C2)".
+* Starts to delete encrypted victim data within 2 minutes, then destroys a file every minute.
+* Once executed, opens a Youtube video and gif on separate browser sessions.  
 
 
 ・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・
