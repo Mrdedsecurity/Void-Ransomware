@@ -1,4 +1,4 @@
-   ![Void](https://github.com/Mrdedsecurity/Void-Ransomware/blob/main/image/void.png)
+   ![Void](https://github.com/Mrdedsecurity/Void-Ransomware/blob/main/image/void.jpg)
     
     
     ___    __     ______________   ________                                                                    
