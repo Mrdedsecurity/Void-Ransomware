@@ -14,6 +14,8 @@ This repository contains a simulated basic ransomware script for educational pur
 
 The ransomware is designed to be deployed in VM environment with attacker and victim systems within the same network. Both systems will need to be configured to use SSH. Additionally, the repository also contains a "victimfolder" which can be used for demo purposes.
 
+The goal of the project was a fun hobby for me, it isn't designed for in the wild attacks, as it would be very easy to detect in real-world attacks.
+
 ・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・
 
 
