@@ -17,8 +17,12 @@ The ransomware is designed to be deployed in VM environment with attacker and vi
 The goal of the project was a fun hobby for me, it isn't designed for in the wild attacks, as it would be very easy to detect in real-world attacks.
 
 ・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・
+Requriements:
 
+* Python 3
+* SSH
 
+・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・┈┈・・┈┈・┈┈・
 Features:
 
 * Encryption of files using the Fernet symmetric key encryption algorithm.
