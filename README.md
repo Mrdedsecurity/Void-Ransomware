@@ -49,7 +49,7 @@ Clone Repository:
 Navigate to the project:
 *      cd Void-Ransomware
 
-Data exfilatration configuration
+Data exfilatration configuration:
 *     configure script's SSH connection for "C2" 
 
 Navigate to a victim folder:
@@ -58,13 +58,10 @@ Navigate to a victim folder:
 Run Ransomware Script:
 *      python3 voidransom.py
 
-Data exfiltation:
-* check data was successfully moved to location, alongside key.
-
-Decrypt Files with key provided
+Decrypt Files:
 *      python3 voiddecrypt.py
 
-Secret Phase
+Secret Phase:
 *      dedopswashere
 
 
