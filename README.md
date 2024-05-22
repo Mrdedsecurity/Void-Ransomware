@@ -50,7 +50,7 @@ Navigate to the project:
 *      cd Void-Ransomware
 
 Data exfilatration configuration:
-*     configure script's SSH connection for "C2" 
+*     configure script's SSH connection 
 
 Navigate to a victim folder:
 *      cd victimfolder (if encrypting demo files)
